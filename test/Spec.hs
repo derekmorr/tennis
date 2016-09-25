@@ -69,13 +69,13 @@ prop_fourty_other_wins_correct_score =
 main :: IO ()
 main = hspec $
   describe "Tennis scoring rules" $ do
-    it "given deuce when player wins the score is correct" $
+    it "given deuce when player wins the score is correct"
       prop_deuce_wins_correct_score
-    it "given advantage when player wins the score is correct" $
+    it "given advantage when player wins the score is correct"
       prop_advantage_wins_correct_score
-    it "given advantage when other player wins then score is correct" $
+    it "given advantage when other player wins then score is correct"
       prop_advantage_other_wins_correct_score
-    it "given player: 40 when player wins the score is correct" $
+    it "given player: 40 when player wins the score is correct"
       prop_fourty_correct_score
-    it "given player: 40 - other:30 when other wins the score is correct" $
+    it "given player: 40 - other:30 when other wins the score is correct"
       prop_fourty_other_wins_correct_score
